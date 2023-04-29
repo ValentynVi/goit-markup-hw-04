@@ -445,14 +445,9 @@ ul {
   border-color: var(--primary-accent-color);
 }
 
-/* .customers-social-link:hover .customer-social-icon,
+.customers-social-link:hover .customer-social-icon,
 .customers-social-link:focus .customer-social-icon {
-  fill: var(--primary-accent-color);
-} */
-
-.customer-social-icon:hover,
-.customer-social-icon:focus {
-  fill: var(--primary-accent-color);
+  fill: #404bbf;
 }
 
 /**
@@ -474,6 +469,7 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-container {
@@ -497,6 +493,7 @@ ul {
 /* FOOTER SOCIAL STYLE */
 
 .footer-social-text {
+  margin-bottom: 16px;
   color: #ffffff;
   font-weight: 500;
   line-height: 1.5;
