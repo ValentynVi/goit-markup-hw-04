@@ -89,9 +89,10 @@ ul {
 }
 
 .title {
+  color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
 }
@@ -363,7 +364,8 @@ ul {
 }
 
 .employee-description {
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .employee-text {
@@ -375,6 +377,7 @@ ul {
 
 .employee-social-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
