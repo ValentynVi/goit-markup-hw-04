@@ -1,15 +1,23 @@
 :root {
-  --primary-background-color: #ffffff;
-  --secondary-background-color: #2e2f42;
-  --third-background-color: #f4f4fd;
+  --primary-fonts: Roboto, sans-serif;
+  --secondary-fonts: Raleway, sans-serif;
+
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
   --third-text-color: #f4f4fd;
+
   --primary-accent-color: #404bbf;
   --secondary-accent-color: #4d5ae5;
-  --primary-fonts: Roboto, sans-serif;
-  --secondary-fonts: Raleway, sans-serif;
+  --third-accent-color: #31d0aa;
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2e2f42;
+  --third-background-color: #f4f4fd;
   --border-color: #e7e9fc;
+  --secondary-border-color: #8e8f99;
+
+  --social-icons-color: #f4f4fd;
+  --customer-icon-color: #8e8f99;
 }
 
 /**
@@ -130,6 +138,9 @@ ul {
 
 /* HEADER NAV */
 .header {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
@@ -284,6 +295,19 @@ ul {
   flex-basis: calc((100% - 24px * 3) / 4);
 }
 
+/* FEATURES ICONS STYLE */
+
+.features-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 8px;
+
+  background: var(--third-background-color);
+  border-radius: 4px;
+}
+
 /**
   |============================
   | ABOUT STYLE
@@ -313,6 +337,9 @@ ul {
   |============================
 */
 .employee {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 120px 0;
 
   background-color: var(--third-background-color);
@@ -340,7 +367,84 @@ ul {
 }
 
 .employee-text {
+  margin-bottom: 8px;
   text-align: center;
+}
+
+/* EMPLOYEE SOCIAL ICONS */
+
+.employee-social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.employee-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  color: var(--social-icons-color);
+
+  background-color: var(--secondary-accent-color);
+  border-radius: 50%;
+}
+
+.employee-social-link:hover,
+.employee-social-link:focus {
+  background-color: var(--primary-accent-color);
+}
+
+.employee-social-icon {
+  fill: currentColor;
+}
+
+/**
+  |============================
+  | CUSTOMERS STYLEA
+  |============================
+*/
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  margin-bottom: 72px;
+}
+
+.customers-social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+
+  color: var(--customer-icon-color);
+
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 4px;
+}
+
+.customer-social-icon {
+  fill: currentColor;
+}
+
+.customers-social-link:hover,
+.customers-social-link:focus {
+  border-color: var(--primary-accent-color);
+}
+
+.customers-social-link:hover .customer-social-icon,
+.customers-social-link:focus .customer-social-icon {
+  fill: var(--primary-accent-color);
 }
 
 /**
@@ -349,12 +453,23 @@ ul {
   |============================
 */
 .footer {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 
   color: var(--third-text-color);
 
   background-color: var(--secondary-background-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.logo-container {
+  margin-right: 120px;
 }
 
 .footer .logo {
@@ -369,6 +484,40 @@ ul {
 
 .footer-text {
   width: 264px;
+}
+
+/* FOOTER SOCIAL STYLE */
+
+.footer-social-text {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  color: var(--social-icons-color);
+
+  background-color: var(--secondary-accent-color);
+  border-radius: 50%;
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--third-accent-color);
 }
 
 /* PORTFOLIO-PAGE */
