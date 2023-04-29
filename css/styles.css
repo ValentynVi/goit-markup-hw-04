@@ -445,8 +445,13 @@ ul {
   border-color: var(--primary-accent-color);
 }
 
-.customers-social-link:hover .customer-social-icon,
+/* .customers-social-link:hover .customer-social-icon,
 .customers-social-link:focus .customer-social-icon {
+  fill: var(--primary-accent-color);
+} */
+
+.customer-social-icon:hover,
+.customer-social-icon:focus {
   fill: var(--primary-accent-color);
 }
 
