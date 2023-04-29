@@ -436,18 +436,14 @@ ul {
   border-radius: 4px;
 }
 
-.customer-social-icon {
-  fill: currentColor;
-}
-
 .customers-social-link:hover,
 .customers-social-link:focus {
+  color: var(--primary-accent-color);
   border-color: var(--primary-accent-color);
 }
 
-.customers-social-link:hover .customer-social-icon,
-.customers-social-link:focus .customer-social-icon {
-  fill: #404bbf;
+.customer-social-icon {
+  fill: currentColor;
 }
 
 /**
